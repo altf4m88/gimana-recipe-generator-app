@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".NewRecipeActivity">
+
+    <ImageView
+        android:id="@+id/imageViewNewRecipeHeaderIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/elbingung"
+        android:contentDescription="@string/new_recipe_header_icon_desc" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNewRecipeHeaderTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/new_screen_title" android:textAppearance="?attr/textAppearanceHeadline5"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNewRecipeHeaderIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNewRecipeHeaderIcon"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNewRecipeHeaderIcon" />
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreviewView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/imageViewNewRecipeHeaderIcon" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="3:4"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/imageViewCaptured"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/imageViewNewRecipeHeaderIcon" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="3:4"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:contentDescription="@string/captured_image_preview" />
+
+    <Button
+        android:id="@+id/buttonTakePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_picture"
+        app:layout_constraintTop_toBottomOf="@id/cameraPreviewView" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"/>
+
+    <EditText
+        android:id="@+id/editTextRecipeClue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_food_clue_e_g_spicy_chicken"
+        android:inputType="textCapSentences"
+        app:layout_constraintTop_toBottomOf="@id/imageViewCaptured" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonGetRecipe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/get_recipe"
+        app:layout_constraintTop_toBottomOf="@id/editTextRecipeClue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonRetakePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retake_picture"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGetRecipe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBarNewRecipe"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

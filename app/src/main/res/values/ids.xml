@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttonTakePicture" type="id" />
+    <item name="cameraPreviewView" type="id" />
+    <item name="imageViewCaptured" type="id" />
+    <item name="editTextRecipeClue" type="id" />
+    <item name="buttonGetRecipe" type="id" />
+    <item name="buttonRetakePicture" type="id" />
+    <item name="progressBarNewRecipe" type="id" />
+</resources>

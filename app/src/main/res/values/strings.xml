@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Gimana - Food Recipe App</string>
+    <string name="create_new_recipe">Create New Recipe</string>
+    <string name="view_history">View History</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="get_recipe">Get Recipe</string>
+    <string name="enter_food_clue_e_g_spicy_chicken">Enter food clue (e.g., spicy chicken)</string>
+    <string name="captured_image_preview">Captured Image Preview</string>
+    <string name="retake_picture">Retake Picture</string>
+    <string name="camera_permission_denied">Camera permission denied. Cannot proceed.</string>
+    <string name="error_capturing_image">Error capturing image: %s</string>
+    <string name="image_saved_to">Image saved to: %s</string>
+    <string name="please_take_a_picture_and_enter_a_clue">Please take a picture and enter a clue.</string>
+    <string name="generating_recipe">Generating recipe…</string>
+    <string name="recipe_generated_and_saved">Recipe generated and saved!</string>
+    <string name="failed_to_generate_recipe">Failed to generate recipe: %s</string>
+    <string name="api_key_not_set_message">API Key not set in GeminiApiService. Please configure it.</string>
+    <string name="description_label">Description</string>
+    <string name="ingredients_label">Ingredients</string>
+    <string name="how_to_make_label">How to Make</string>
+    <string name="tips_label">Tips</string>
+    <string name="recipe_not_found">Recipe not found.</string>
+    <string name="food_image">Food Image</string>
+    <string name="error_loading_recipe_image">Error loading recipe image.</string>
+    <string name="recipe_thumbnail">Recipe Thumbnail</string>
+    <string name="no_recipes_in_history">No recipes saved yet. Create one!</string>
+    <string name="app_logo">Logo</string>
+    <string name="saved_on_prefix">Saved: </string>
+    <string name="history_header_icon_description">History section icon</string>
+    <string name="history_screen_title">History</string>
+    <string name="new_screen_title">New Recipe</string>
+    <string name="new_recipe_header_icon_desc">New Recipe section icon</string>
+</resources>
